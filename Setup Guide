@@ -1,0 +1,8 @@
+Setting Up a New Node Board
+
+Step 1: Run NEOLS_Signals_Config_Script.bat
+Step 2: Open https://client.meshtastic.org/
+Step 3: In the client, select "Channels" from the Navigation Pane
+Step 4: In the client, in the upper right hand corner, select the download symbol; The Import Channel Set Dialog should appear.
+Step 5: Paste the following URL in the dialog: https://meshtastic.org/e/#CgMSAQEKKBIgCtmYbEUlWChW6BFkdBCcgvJaf_epcWt8ytHXoJ4m4LoaBGdwaW8KFRIMadministrationchGgVhZG1pbhIOCAEQBjgBQANIAVAeaAE
+Step 6: Select Channels 0, gpio, and admin.  Apply their settings.

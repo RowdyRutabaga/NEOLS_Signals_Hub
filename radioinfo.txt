@@ -1,0 +1,19 @@
+Connected to radio
+
+Owner: NEOLS_Signals_Hub (Hub)
+My info: { "myNodeNum": 4201061820, "rebootCount": 18, "minAppVersion": 30200 }
+Metadata: { "firmwareVersion": "2.2.22.404d0dd", "deviceStateVersion": 22, "canShutdown": true, "hasWifi": true, "hasBluetooth": true, "positionFlags": 811, "hwModel": "HELTEC_V3", "hasRemoteHardware": true }
+
+Nodes in mesh: {"!fa671dbc": {"num": 4201061820, "user": {"longName": "NEOLS_Signals_Hub", "shortName": "Hub", "macaddr": "f4:12:fa:67:1d:bc", "hwModel": "HELTEC_V3"}, "position": {}, "deviceMetrics": {"batteryLevel": 80, "voltage": 4.018, "channelUtilization": 2.615, "airUtilTx": 0.043583333}}, "!fa671630": {"num": 4201059888, "user": {"longName": "Chessie_Loop_0", "shortName": "CL0", "macaddr": "f4:12:fa:67:16:30", "hwModel": "HELTEC_V3"}, "position": {"time": 1708998351}, "snr": 7.75, "lastHeard": 1708998351}}
+
+Preferences: { "device": { "serialEnabled": true, "nodeInfoBroadcastSecs": 10800 }, "position": { "positionBroadcastSecs": 900, "positionBroadcastSmartEnabled": true, "gpsUpdateInterval": 120, "positionFlags": 811, "broadcastSmartMinimumDistance": 100, "broadcastSmartMinimumIntervalSecs": 30, "gpsMode": "NOT_PRESENT" }, "power": { "waitBluetoothSecs": 60, "sdsSecs": 4294967295, "lsSecs": 300, "minWakeSecs": 10 }, "network": { "ntpServer": "0.pool.ntp.org" }, "display": { "screenOnSecs": 600 }, "lora": { "usePreset": true, "region": "US", "hopLimit": 3, "txEnabled": true, "txPower": 30, "sx126xRxBoostedGain": true }, "bluetooth": { "enabled": true, "fixedPin": 123456 } }
+
+Module preferences: { "mqtt": { "address": "mqtt.meshtastic.org", "username": "meshdev", "password": "large4cats", "encryptionEnabled": true, "root": "msh/US" }, "serial": {}, "externalNotification": {}, "rangeTest": {}, "telemetry": { "deviceUpdateInterval": 900, "environmentUpdateInterval": 900, "airQualityInterval": 900 }, "cannedMessage": {}, "audio": {}, "remoteHardware": { "enabled": true }, "neighborInfo": { "updateInterval": 900 }, "ambientLighting": { "current": 10, "red": 103, "green": 29, "blue": 188 }, "detectionSensor": { "minimumBroadcastSecs": 45, "detectionTriggeredHigh": true }, "paxcounter": {} }
+
+Channels:
+  PRIMARY psk=default { "psk": "AQ==" }
+  SECONDARY psk=secret { "psk": "CtmYbEUlWChW6BFkdBCcgvJaf/epcWt8ytHXoJ4m4Lo=", "name": "gpio" }
+
+Primary channel URL: https://meshtastic.org/e/#CgMSAQESDAgBOAFAA0gBUB5oAQ
+Complete URL (includes all channels): https://meshtastic.org/e/#CgMSAQEKKBIgCtmYbEUlWChW6BFkdBCcgvJaf_epcWt8ytHXoJ4m4LoaBGdwaW8SDAgBOAFAA0gBUB5oAQ
+
