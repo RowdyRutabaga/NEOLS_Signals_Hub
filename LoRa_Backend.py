@@ -77,10 +77,6 @@ class LoRa_Hub_Thread(QObject):
         if b"Claim detected" in message:
             print(f"Claim Received from {self.node_dict_id_to_name[source_address]}")
             for i in self.node_list:
-                if i['User'] == self.node_dict_id_to_name[source_address]:
-                    pass
-                else:
-                    self.stop_indication(i['User'])
                 node = self.interface.getNode(self.node_dict_name_to_id[i['User']],False)
                 # Handle the int/float/bool arguments
                 pref = ["detection_sensor.monitor_pin","7"]
@@ -133,6 +129,11 @@ class LoRa_Hub_Thread(QObject):
                         break
                 else:
                     print("Odd Error")
+                if i['User'] == self.node_dict_id_to_name[source_address]:
+                    pass
+                else:
+                    self.stop_indication(i['User'])
+            time.sleep(2)
             self.approach_indication(self.node_dict_id_to_name[source_address])
             self.interface.sendText("Claim Complete!")
 

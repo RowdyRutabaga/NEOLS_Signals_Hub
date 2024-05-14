@@ -5,6 +5,7 @@ meshtastic --set-owner-short  'NODE'
 meshtastic --port com3 --set remote_hardware.enabled true
 meshtastic --port com3 --gpio-watch 6 --dest 28979058
 meshtastic --port com3 --gpio-watch 7 --dest 28979058
+py -3 -m meshtastic --port com3 --gpio-wrb 4 0 --dest !75c7fe40
 
 
 
