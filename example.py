@@ -1,18 +1,7 @@
-import meshtastic
-import meshtastic.serial_interface
-from pubsub import pub
-import time
-
-def onReceive(packet, interface): # called when a packet arrives
-    print(f"Received: {packet}")
-
-def onConnection(interface, topic=pub.AUTO_TOPIC): # called when we (re)connect to the radio
-    # defaults to broadcast, specify a destination ID if you wish
-    interface.sendText("hello mesh")
-
-pub.subscribe(onReceive, "meshtastic.receive")
-pub.subscribe(onConnection, "meshtastic.connection.established")
-# By default will try to find a meshtastic device, otherwise provide a device path like /dev/ttyUSB0
-interface = meshtastic.serial_interface.SerialInterface("COM3")
-while True:
-    time.sleep(1000)
+import requests
+headers = {
+'Content-Type': 'application/json',
+'Authorization': 'Bearer vgEADQAAAA9iY2dkdi5sb3Jpb3QuaW-ve6WTseo19HasKoGVQJS1',
+}
+data = '{ "cmd": "tx", "EUI": "5C7C5824000054B9", "port": 69, "confirmed": true, "data": "Tumbledown", "appid": "BE01000D" }'
+response = requests.post('https://us1.loriot.io/1/rest', headers=headers, data=data)
